@@ -1,0 +1,4 @@
+The DropDownModelAdaptor is a helper class to use the content
+of a bb::cascades::DataModel as data source for a bb::cascades::DropDown.
+
+See the example/dynamicdropdown sample for how to use it.
