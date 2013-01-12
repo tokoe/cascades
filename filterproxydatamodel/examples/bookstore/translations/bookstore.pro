@@ -1,0 +1,1 @@
+include (../bookstore.pro)
