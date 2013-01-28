@@ -201,12 +201,10 @@ void FilterProxyDataModel::Private::sourceModelItemRemoved(const QVariantList &i
     }
 }
 
-void FilterProxyDataModel::Private::sourceModelItemsChanged(bb::cascades::DataModelChangeType::Type eChangeType,
-                                                            const QSharedPointer<bb::cascades::DataModel::IndexMapper> &indexMapper)
+void FilterProxyDataModel::Private::sourceModelItemsChanged(bb::cascades::DataModelChangeType::Type,
+                                                            const QSharedPointer<bb::cascades::DataModel::IndexMapper>&)
 {
-    Q_UNUSED(eChangeType)
-    Q_UNUSED(indexMapper)
-    qWarning() << "sourceModelItemsChanged called";
+    q->invalidateFilter();
 }
 
 
